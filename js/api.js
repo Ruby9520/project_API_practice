@@ -11,7 +11,7 @@ $(document).ready(function($){
                 console.log(movie.title);
                 // card ¥»¤H
                 const card= document.createElement('div');
-                card.attr('class')='card';
+                card.setAttribute('class', 'card');
                 //title
                 const h1 = document.createElement('h1');
                 //h1.text(movie.title);

@@ -1,6 +1,16 @@
 *{margin:0; padding:0};
+.container{
+    max-width:unset;
+    img{
+        position:fixed;
+        top:0
+    }
+}
 #root{
     margin:auto;
+    h1{
+        padding-top:2%;
+    }
     .card{
         padding:1%;
         >div {

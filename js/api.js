@@ -1,4 +1,4 @@
-$(document).ready(function($){
+jquery(document).ready(function($){
     const app = $('#root');
     const container = $('.container');
     var request=new XMLHttpRequest();
@@ -11,7 +11,7 @@ $(document).ready(function($){
                 console.log(movie.title);
                 // card ¥»¤H
                 const card= document.createElement('div');
-                card.attr('class', 'card');
+                card.attr('class')='card';
                 //title
                 const h1 = document.createElement('h1');
                 //h1.text(movie.title);

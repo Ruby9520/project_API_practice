@@ -1,6 +1,7 @@
 *{margin:0; padding:0};
 .container{
     max-width:unset;
+    padding:0;
     img{
         position:fixed;
         top:0
@@ -9,12 +10,16 @@
 #root{
     margin:auto;
     h1{
-        padding-top:2%;
+        margin:2%;
+        text-align:center;
     }
     .card{
         padding:1%;
+        background:transparent;
         >div {
             padding:3%;
+            background:rgba(255,255,255,.3);
+            height:100%
         }
     }
 }

@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#root {
+  margin: auto; }
+  #root .card {
+    padding: 1%; }
+    #root .card > div {
+      padding: 3%; }
+
+/*# sourceMappingURL=style.css.map */

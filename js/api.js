@@ -1,4 +1,4 @@
-jquery(document).ready(function($){
+$(document).ready(function($){
     const app = $('#root');
     const container = $('.container');
     var request=new XMLHttpRequest();

@@ -14,12 +14,10 @@ $(document).ready(function($){
                 card.setAttribute('class', 'card col-md-4 col-lg-6');
                 //title
                 const h1 = document.createElement('h1');
-                h1.text(movie.title);
-                //h1.textContent=movie.title;
+                h1.textContent=movie.title;
                 //content
                 const p = document.createElement('p');
                 movie.description= movie.description.substring(0, 300);
-                //des.text('$(movie.description)'+'...');
                 p.textContent = `${movie.description}...`;
                 card.append(h1, p);
                 container.append(card);

@@ -8,7 +8,30 @@ $(document).ready(function($){
     //start accessing JSON data
         var data = JSON.parse(this.response);
         if(request.status >=200 && request.status <400){
-            data.forEach(movie => {
+            /**/
+            data.each(function(movie){
+                console.log('in');
+                const card= document.createElement('div');
+                card.attr('class','card col-md-6');
+            
+                const card_child=document.createElement('div');
+                card_child.attr('class', 'card_child');
+                
+                const h1=document.createElement('h1');
+                h1.text(movie.title);
+                
+                const p=document.createElement('p');
+                movie.description = movie.description.substring(0,200);
+                p.text(movie.description+'...');
+                const hr= document.createElement('hr')
+                card_child.append(h1, hr, p);
+                card.append(card_child);
+                root_inner.append(card);
+            })
+            
+            
+            /**/
+            /*data.forEach(movie => {
                 // card ¥»¤H
                 const card= document.createElement('div');
                 card.setAttribute('class', 'card col-md-6');
@@ -27,7 +50,7 @@ $(document).ready(function($){
                 card.append(card_child);
                 root_inner.append(card);
                 //container.append(root);
-            })
+            })*/
         }else{
             console.log('somthing goes wrong');
         }

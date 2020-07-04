@@ -4,34 +4,11 @@ $(document).ready(function($){
     const container = $('.container');
     var request=new XMLHttpRequest();
     request.open('GET', 'https://ghibliapi.herokuapp.com/films');
-    request.on('load', function(){
+    request.onload=function(){
     //start accessing JSON data
         var data = JSON.parse(this.response);
         if(request.status >=200 && request.status <400){
-            /**/
-            data.each(function(movie){
-                console.log('in');
-                const card= document.createElement('div');
-                card.attr('class','card col-md-6');
-            
-                const card_child=document.createElement('div');
-                card_child.attr('class', 'card_child');
-                
-                const h1=document.createElement('h1');
-                h1.text(movie.title);
-                
-                const p=document.createElement('p');
-                movie.description = movie.description.substring(0,200);
-                p.text(movie.description+'...');
-                const hr= document.createElement('hr')
-                card_child.append(h1, hr, p);
-                card.append(card_child);
-                root_inner.append(card);
-            })
-            /**/
-            /*
-            request.onload=function(){
-                data.forEach(movie => {
+            data.forEach(movie => {
                 // card ¥»¤H
                 const card= document.createElement('div');
                 card.setAttribute('class', 'card col-md-6');
@@ -51,11 +28,10 @@ $(document).ready(function($){
                 root_inner.append(card);
                 //container.append(root);
             })
-            }*/
         }else{
             console.log('somthing goes wrong');
         }
-        });
+    }
     request.send();
 })
 

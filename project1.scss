@@ -18,6 +18,7 @@
         margin:2% 2% 1.5vw;
         text-align:center;
         font-size:30px;
+        color:#f9ae98;
     }
     .card{
         padding:1%;
@@ -31,6 +32,9 @@
                 transform: scale(1.05);
                 transition: .5s;
                 background: #04456563;
+                h1{
+                    color:#fff;
+                }
             }
         }
         hr{

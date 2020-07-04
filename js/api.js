@@ -1,5 +1,6 @@
 $(document).ready(function($){
     const root = $('#root');
+    const root_inner=$('#root_inner');
     const container = $('.container');
     var request=new XMLHttpRequest();
     request.open('GET', 'https://ghibliapi.herokuapp.com/films');
@@ -24,8 +25,8 @@ $(document).ready(function($){
                 p.textContent = `${movie.description}...`;
                 card_child.append(h1, p);
                 card.append(card_child);
-                root.append(card);
-                container.append(root);
+                root_inner.append(card);
+                //container.append(root);
             })
         }else{
             console.log('somthing goes wrong');

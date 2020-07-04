@@ -28,6 +28,10 @@
             padding:3% 5%;
             background:rgba(255,255,255,.3);
             height:100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align:center;
             &:hover{
                 transform: scale(1.05);
                 transition: .5s;
@@ -35,11 +39,16 @@
                 h1{
                     color:#fff;
                 }
+                hr{
+                    width:100%;
+                }
             }
         }
         hr{
             height:2px;
             background: linear-gradient(45deg, transparent, #f8f9fa, transparent);
+            transition:.5s;
+            width:50%;
         }
     }
 }

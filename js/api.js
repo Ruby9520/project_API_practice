@@ -4,7 +4,7 @@ $(document).ready(function($){
     const container = $('.container');
     var request=new XMLHttpRequest();
     request.open('GET', 'https://ghibliapi.herokuapp.com/films');
-    request.onload=function(){
+    request.on('load', function(){
     //start accessing JSON data
         var data = JSON.parse(this.response);
         if(request.status >=200 && request.status <400){
@@ -31,7 +31,9 @@ $(document).ready(function($){
             
             
             /**/
-            /*data.forEach(movie => {
+            /*
+            request.onload=function(){
+                data.forEach(movie => {
                 // card ¥»¤H
                 const card= document.createElement('div');
                 card.setAttribute('class', 'card col-md-6');
@@ -50,10 +52,12 @@ $(document).ready(function($){
                 card.append(card_child);
                 root_inner.append(card);
                 //container.append(root);
-            })*/
+            })
+            }*/
         }else{
             console.log('somthing goes wrong');
         }
+        })
     }
     request.send();
 })

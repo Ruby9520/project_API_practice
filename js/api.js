@@ -9,7 +9,6 @@ $(document).ready(function($){
         var data = JSON.parse(this.response);
         if(request.status >=200 && request.status <400){
             data.forEach(movie => {
-                console.log(movie.title);
                 // card ¥»¤H
                 const card= document.createElement('div');
                 card.setAttribute('class', 'card col-md-6');

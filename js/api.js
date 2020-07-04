@@ -28,8 +28,6 @@ $(document).ready(function($){
                 card.append(card_child);
                 root_inner.append(card);
             })
-            
-            
             /**/
             /*
             request.onload=function(){
@@ -57,8 +55,7 @@ $(document).ready(function($){
         }else{
             console.log('somthing goes wrong');
         }
-        })
-    }
+        });
     request.send();
 })
 

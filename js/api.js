@@ -22,7 +22,8 @@ $(document).ready(function($){
                 const p = document.createElement('p');
                 movie.description= movie.description.substring(0, 300);
                 p.textContent = `${movie.description}...`;
-                card_child.append(h1, p);
+                const hr= document.createElement('hr')
+                card_child.append(h1, hr, p);
                 card.append(card_child);
                 root_inner.append(card);
                 //container.append(root);

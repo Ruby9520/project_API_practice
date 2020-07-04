@@ -12,7 +12,7 @@ $(document).ready(function($){
                 console.log(movie.title);
                 // card ¥»¤H
                 const card= document.createElement('div');
-                card.setAttribute('class', 'card col-md-6 col-lg-4');
+                card.setAttribute('class', 'card col-md-6');
                 
                 const card_child=document.createElement('div');
                 card_child.setAttribute('class', 'card_child');

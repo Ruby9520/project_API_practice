@@ -21,8 +21,9 @@
     .card{
         padding:1%;
         background:transparent;
+        border:none;
         >div {
-            padding:3%;
+            padding:3% 5%;
             background:rgba(255,255,255,.3);
             height:100%
         }

@@ -28,5 +28,12 @@
       padding: 3% 5%;
       background: rgba(255, 255, 255, 0.3);
       height: 100%; }
+      #root .card > div:hover {
+        transform: scale(1.05);
+        transition: .5s;
+        background: #04456563; }
+    #root .card hr {
+      height: 2px;
+      background: linear-gradient(45deg, transparent, #f8f9fa, transparent); }
 
 /*# sourceMappingURL=style.css.map */

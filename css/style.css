@@ -4,13 +4,18 @@
 
 .container {
   max-width: unset;
-  padding: 0; }
+  padding: 0;
+  background: url(https://drive.google.com/uc?export=view&id=1vaJLf1UAm3XkZp-ki8Ndkn8ovB2yYTJU);
+  background-attachment: fixed;
+  background-position: 80% top; }
   .container img {
     position: fixed;
     top: 0; }
 
 #root {
-  margin: auto; }
+  margin: auto;
+  padding: 2vw 5vw;
+  color: #fff; }
   #root h1 {
     margin: 2%;
     text-align: center; }

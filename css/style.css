@@ -17,8 +17,9 @@
   padding: 2vw 5vw;
   color: #fff; }
   #root h1 {
-    margin: 2%;
-    text-align: center; }
+    margin: 2% 2% 1.5vw;
+    text-align: center;
+    font-size: 30px; }
   #root .card {
     padding: 1%;
     background: transparent;

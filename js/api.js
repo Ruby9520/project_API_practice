@@ -39,9 +39,12 @@ $(document).ready(function($){
 /*
 $(document).ready(function($){
     var request = $.get('https://ghibliapi.herokuapp.com/films', function(data){
-    });
     var data= JSON.parse(this.response);
     data.each(function(movie){
         console.log(movie.title);
     });
+    
+    
+    });
+
 }) */

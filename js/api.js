@@ -44,10 +44,7 @@ $(document).ready(function($){
     
     $.get('https://ghibliapi.herokuapp.com/films', function(){
         console.log('success');
-        if (typeof data !== 'undefined') {
-            var data = JSON.parse(this.response);
-            console.log(data);
-        }
+        var data = JSON.parse(this.response);
         data.each(function(movie){
             console.log(movie.title);
             const card= document.createElement('div');

@@ -56,8 +56,7 @@ $(document).ready(function($){
             //content
             const p = document.createElement('p');
             movie.description= movie.description.substring(0, 300);
-            p.text(${movie.description}+'...');
-            //p.textContent = `${movie.description}...`;
+            p.textContent = `${movie.description}...`;
             const hr= document.createElement('hr')
             card_child.append(h1, hr, p);
             card.append(card_child);
@@ -65,5 +64,4 @@ $(document).ready(function($){
             //container.append(root);
         });
     });
-    request.fail(function(){console.log('something is wrong');})
 })

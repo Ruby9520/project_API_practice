@@ -43,7 +43,7 @@ $(document).ready(function($){
     const container = $('.container');
     $.get('https://ghibliapi.herokuapp.com/films', function(){
         console.log('success');
-        var data = JSON.parse(this.responseText);
+        var data = JSON.parse(this.response);
         /*if (typeof test1 !== 'undefined') {
             var data = JSON.parse(this.responseText);
         }*/

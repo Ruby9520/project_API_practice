@@ -42,9 +42,9 @@ $(document).ready(function($){
     const root_inner=$('#root_inner');
     const container = $('.container');
     
-    $.get('https://ghibliapi.herokuapp.com/films', function(){
-        console.log('success');
-        var data = JSON.parse(this.response);
+    $.get('https://ghibliapi.herokuapp.com/films', function(data){
+        console.log(data);
+        /*var data = JSON.parse(this.response);
         data.each(function(movie){
             console.log(movie.title);
             const card= document.createElement('div');
@@ -64,6 +64,6 @@ $(document).ready(function($){
             card.append(card_child);
             root_inner.append(card);
             //container.append(root);
-        });
+        });*/
     });
 })

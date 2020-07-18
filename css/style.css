@@ -16,6 +16,12 @@
   margin: auto;
   padding: 2vw 5vw;
   color: #fff; }
+  #root > div:first-child {
+    text-align: center; }
+  #root img {
+    position: relative;
+    margin-bottom: 50px;
+    filter: drop-shadow(2px 4px 6px #fff) invert(1); }
   #root h1 {
     margin: 2%;
     text-align: center;

@@ -44,8 +44,8 @@ $(document).ready(function($){
     
     $.get('https://ghibliapi.herokuapp.com/films', function(data){
         console.log(data);
-        /*var data = JSON.parse(this.response);
-        data.each(function(movie){
+        var response = JSON.parse(data);
+        response.each(function(movie){
             console.log(movie.title);
             const card= document.createElement('div');
             card.attr('class', 'card col-md-6');

@@ -49,7 +49,7 @@ $(document).ready(function($){
         //var response = JSON.stringify(data); //array Âàjson
         //var response = JSON.stringify(Object.assign({}, data));
         console.log(typeof response);//string
-        response.each(function(movie){
+        response.forEach(function(movie){
             console.log(movie.title);
             const card= document.createElement('div');
             card.attr('class', 'card col-md-6');

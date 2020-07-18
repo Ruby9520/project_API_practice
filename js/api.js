@@ -47,6 +47,7 @@ $(document).ready(function($){
         //var response = JSON.stringify(data);
         var response = JSON.stringify(Object.assign({}, data));
         console.log(response);
+        console.log(typeof response);
         response.each(function(movie){
             console.log(movie.title);
             const card= document.createElement('div');

@@ -1,4 +1,4 @@
-/*$(document).ready(function($){
+$(document).ready(function($){
     const root = $('#root');
     const root_inner=$('#root_inner');
     const container = $('.container');
@@ -7,6 +7,7 @@
     request.onload=function(){
     //start accessing JSON data
         var data = JSON.parse(this.response);
+        console.log(typeof data);
         if(request.status >=200 && request.status <400){
             data.forEach(movie => {
                 // card ¥»¤H
@@ -33,11 +34,11 @@
         }
     }
     request.send();
-})*/
+})
 
 
 
-$(document).ready(function($){
+/*$(document).ready(function($){
     const root = $('#root');
     const root_inner=$('#root_inner');
     const container = $('.container');
@@ -46,8 +47,7 @@ $(document).ready(function($){
         console.log(data);
         //var response = JSON.stringify(data);
         var response = JSON.stringify(Object.assign({}, data));
-        console.log(response);
-        console.log(typeof response);
+        console.log(response);//string
         response.each(function(movie){
             console.log(movie.title);
             const card= document.createElement('div');
@@ -69,4 +69,4 @@ $(document).ready(function($){
             //container.append(root);
         });
     });
-})
+})*/

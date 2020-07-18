@@ -45,10 +45,11 @@ $(document).ready(function($){
     
     $.get('https://ghibliapi.herokuapp.com/films', function(data){
         console.log(data);
-        var response = Object.assign({}, data);
+        var response= data;
+        //var response = Object.assign({}, data);//arrayÂàobject
         //var response = JSON.stringify(data); //array Âàjson
         //var response = JSON.stringify(Object.assign({}, data));
-        console.log(typeof response);//string
+        console.log(typeof response);
         response.forEach(movie => {
             console.log(movie.title);
             const card= document.createElement('div');

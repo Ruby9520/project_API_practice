@@ -64,6 +64,6 @@ $(document).ready(function($){
             card.append(card_child);
             root_inner.append(card);
             //container.append(root);
-        });*/
+        });
     });
 })

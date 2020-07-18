@@ -45,7 +45,7 @@ $(document).ready(function($){
     
     $.get('https://ghibliapi.herokuapp.com/films', function(data){
         console.log(data);
-        var response= data;
+        var response= data; //object
         //var response = Object.assign({}, data);//arrayÂàobject
         //var response = JSON.stringify(data); //array Âàjson
         console.log(typeof response);
